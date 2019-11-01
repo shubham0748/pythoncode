@@ -1,3 +1,53 @@
+1)
+def Add(no1,no2):
+	return no1+no2;
+
+def Sub(no1,no2):
+	return no1-no2;
+
+def Mult(no1,no2):
+	return no1*no2;
+
+def Div(no1,no2):
+	return no1/no2;
+    
+    
+    
+    import Arithmetic;
+
+#Addition
+no1=int(input("Enter Number1: "));
+no2=int(input("Enter Number2: "));
+
+addition=Arithmetic.Add(no1,no2)
+print("Addition is: ",addition,"\n");
+
+#Substraction
+no1=int(input("Enter Number1: "));
+no2=int(input("Enter Number2: "));
+
+Substraction=Arithmetic.Sub(no1,no2)
+print("Substraction is: ",Substraction,"\n");
+
+#Multiplication
+no1=int(input("Enter Number1: "));
+no2=int(input("Enter Number2: "));
+
+Multiplication=Arithmetic.Mult(no1,no2)
+print("Multiplication is: ",Multiplication,"\n");
+
+#Division
+no1=int(input("Enter Number1: "));
+no2=int(input("Enter Number2: "));
+
+while(no2==0):
+    if(no2==0):
+        print("\nCANNOT BE DIVIDED BY ZERO\nPlease Enter Again\n");
+        no2=int(input("Enter Number2: "));
+
+Division=Arithmetic.Div(no1,no2)
+print("Division is: ",Division,"\n");
+
 
 2)
 def pattern(x):
@@ -85,5 +135,17 @@ def pattern3(x):
 num=int(input())
 pattern3(num)
 
+9)
 
 
+10)
+def addDig(no):
+   x=0
+   while(no>0):
+      temp=no%10;
+      x=x+temp;
+      no=no//10;
+   print("Addition of Digits is: ",x);
+   
+no=int(input("Please Enter a number: "))
+addDig(no);
