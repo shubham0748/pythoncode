@@ -1,0 +1,123 @@
+"""
+def pattern(no,a):
+    if a<=no:
+        print("*",end="")
+        pattern(no,a+1)
+    
+
+def main():
+    value = int(input("Enter no"));
+    i=1
+    pattern(value,i);
+
+
+if __name__ == "__main__":
+ main(); 
+
+
+
+
+
+
+
+
+
+def pattern(no,a):
+    if a<=no:
+        print(a,end="")
+        pattern(no,a+1)
+    
+
+def main():
+    value = int(input("Enter no"));
+    i=1
+    pattern(value,i);
+
+
+if __name__ == "__main__":
+ main(); 
+
+
+
+
+
+
+
+
+def pattern(no,a):
+    if a<=no:
+        pattern(no,a+1)
+        print(a,end="")
+    
+
+def main():
+    value = int(input("Enter no"));
+    i=1
+    pattern(value,i);
+
+
+if __name__ == "__main__":
+ main(); 
+
+
+      
+
+
+
+
+c=0
+def sum(no):
+    if no!=0:
+        b=no%10
+        global c
+        c=c+b
+        no=no//10
+        sum(no)
+        return c
+    
+        
+def main():
+    value = int(input("Enter no"));
+    ret=sum(value);
+    print(ret)
+
+if __name__ == "__main__":
+ main(); 
+
+
+
+
+
+
+
+
+fact=1
+def factorial(no,a):
+    global fact
+    if a<=no:
+        fact=fact*a
+        factorial(no,a+1)
+        return fact
+    
+        
+def main():
+    value = int(input("Enter no"));
+    i=1
+    ret=factorial(value,i);
+    print(ret)
+if __name__ == "__main__":
+ main(); 
+
+
+ 
+
+"""
+
+
+
+
+
+
+
+
+
