@@ -1,0 +1,105 @@
+"""
+class BookStore:
+    NoOfBooks = 0;
+    def __init__(self, value1, value2):
+        self.name =value1;
+        self.author =value2;
+        BookStore.NoOfBooks+=1;
+    def Display(self):
+        print(self.name);
+        print(self.author);
+        print(self.NoOfBooks);
+def main():
+    Obj1 = BookStore("Linux System Programming", "Robert Love")
+    Obj1.Display() 
+    Obj2 = BookStore("C Programming", "Dennis Ritchie")
+    Obj2.Display()
+if __name__ == "__main__":
+    main();
+    
+
+
+
+
+class BankAccount:
+    ROI = 10.5;
+    def __init__(self, custname, value):
+        self.name =custname;
+        self.amount =value;
+    def Deposit(self,value):
+        self.amount = self.amount + value;
+    def Withdraw(self,value):
+        self.Withdrawamount = self.amount - value;
+    def CalculateIntrest(self):
+        self.CalculateIntrestamount = (self.Withdrawamount * self.ROI*1)/100;
+    def Display(self):
+        print(self.name);
+        print(self.amount);
+        print(self.Withdrawamount);
+        print(self.CalculateIntrestamount);
+def main():
+    obj1 = BankAccount("Amar",2000);
+    obj2 = BankAccount("Sagar",5000);
+    obj1.Deposit(500);
+    obj2.Deposit(500);
+    obj1.Withdraw(200);
+    obj2.Withdraw(300);
+    obj1.CalculateIntrest();
+    obj2.CalculateIntrest();
+    obj1.Display();
+    obj2.Display();
+if __name__ == "__main__":
+    main();
+
+
+
+
+class Numbers:
+    def __init__(self,value):
+        self.no1 =value;
+        self.arr=list();
+    def ChkPrime(self):
+        cnt=0
+        for i in range(2,self.no1+1):
+            if(self.no1 % i)==0:
+                cnt+=1
+        if(cnt==1):
+            print("number is prime",self.no1)
+        else:
+            print("number is not prime",self.no1)
+    def ChkPerfect(self):
+        sum = 0
+        for x in range(1, self.no1):
+            if self.no1 % x == 0:
+                sum += x
+        if sum == self.no1:
+            print("number is perfct",self.no1)
+        else:
+            print("number is not a perfct",self.no1)
+    def Factors(self):
+        self.arr=list()
+        for i in range(1, self.no1 + 1):
+            if self.no1 % i == 0:
+                self.arr.append(i);
+        print("Factors are",self.arr)
+    def SumFactors(self):
+        total = 0
+        for ele in range(0, len(self.arr)): 
+            total = total + self.arr[ele] 
+        print("Sum of all elements in given list: ", total) 
+def main():
+    obj1 = Numbers(28);
+    obj2 = Numbers(13);
+    obj1.ChkPrime();
+    obj2.ChkPrime();
+    obj1.ChkPerfect();
+    obj2.ChkPerfect();
+    obj1.Factors();
+    obj2.Factors();
+    obj1.SumFactors();
+    obj2.SumFactors();
+if __name__ == "__main__":
+    main();
+    
+    
+"""
