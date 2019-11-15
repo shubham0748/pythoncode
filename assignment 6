@@ -1,0 +1,106 @@
+"""
+class Demo:
+    value = 0;
+    def __init__(self, x, y):
+        self.no1 =x;
+        self.no2 =y;
+    def fun(self):
+        self.no1 ;
+        self.no2 ;
+    def gun(self):
+        self.no1 ;
+        self.no2 ;
+def main():
+    obj1 = Demo(1000,2000);
+    obj2 = Demo(4000,5000);
+    obj1.fun();
+    obj2.fun();
+    print(obj1.no1);
+    print(obj2.no1);
+    obj1.gun();
+    obj2.gun();
+    print(obj1.no2);
+    print(obj2.no2);
+if __name__ == "__main__":
+    main();
+
+
+
+
+
+
+class Circle:
+    pie = 3.14;
+    def __init__(self):
+        self.radius=0.0;
+        self.area=0.0;
+        self.Circumference=0.0;
+    def Accept(self,value):
+        self.radius=value;
+    def CalculateArea(self):
+        self.area = 2*self.pie*self.radius*self.radius;
+    def CalculateCircumference(self):
+        self.Circumference = 2*self.pie*self.radius;
+    def Display(self):
+        print(self.radius);
+        print(self.area);
+        print(self.Circumference);
+def main():
+    obj1 = Circle();
+    obj2 = Circle();
+    obj1.Accept(5);
+    obj2.Accept(10);
+    obj1.CalculateArea();
+    obj2.CalculateArea();
+    obj1.CalculateCircumference();
+    obj2.CalculateCircumference();
+    obj1.Display();
+    obj2.Display();
+if __name__ == "__main__":
+    main();
+
+
+
+
+
+class Arithmetic:
+    def __init__(self):
+        self.value1=0.0;
+        self.value2=0.0;
+        self.value3=0.0;
+    def Accept(self,no1,no2):
+        self.value1=no1;
+        self.value2=no2;
+    def Addition(self):
+        self.value3= self.value1+self.value2;
+    def Subtraction(self):
+        self.value3= self.value1-self.value2;
+    def Multiplication(self):
+        self.value3= self.value1*self.value2;
+    def Division(self):
+        self.value3= self.value1/self.value2;
+def main():
+    obj1 = Arithmetic();
+    obj2 = Arithmetic();
+    obj1.Accept(5,10);
+    obj2.Accept(10,20);
+    obj1.Addition();
+    obj2.Addition();
+    print(obj1.value3);
+    print(obj2.value3);
+    obj1.Subtraction();
+    obj2.Subtraction();
+    print(obj1.value3);
+    print(obj2.value3);
+    obj1.Multiplication();
+    obj2.Multiplication();
+    print(obj1.value3);
+    print(obj2.value3);
+    obj1.Division();
+    obj2.Division();
+    print(obj1.value3);
+    print(obj2.value3);
+if __name__ == "__main__":
+    main();
+
+"""
